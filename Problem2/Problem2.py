@@ -7,6 +7,7 @@ def problem2_solution():
     counter = 0
     # Starting sequence
     seq = [1, 2]
+
     while temp < 4000000:
         temp = seq[counter] + seq[counter + 1]
         counter += 1
@@ -14,4 +15,5 @@ def problem2_solution():
         # Check if the result of the Fibonacci is even
         if temp % 2 == 0:
             sum += temp
+
     return sum
